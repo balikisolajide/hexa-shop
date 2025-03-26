@@ -269,3 +269,86 @@ nav{
     font-weight: 400;
     font-style: italic;
 }
+.men-latest{
+    padding: 90px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 15px;
+}
+.men-latest-header{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 95px;
+}
+.men-latest-header h1{
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+.men-latest-header p{
+    color: #212529;
+    font-size: 14px;
+    font-weight: 500;
+}
+.men-latest-content{
+    display: flex;
+    /* justify-content: center; */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    align-items: center;
+    gap: 30px;
+    /* justify-content: space-between; */
+}
+.box-arrow{
+    border: 1px solid black;
+    padding: 20px;
+    /* width: 100px;
+    height: 50px; */
+}
+.box-arrow img{
+    width: 30px;
+    height: 30px;
+}
+.box-arrow-img{
+    transform: rotate(180deg);
+}
+.mens-img-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 370px;
+}
+.mens-img-content img{
+    width: 100%;
+    height: 350px;
+}
+.mens-img-below{
+    display: flex;
+    justify-content: space-between;
+}
+.mens-img-below-content{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.mens-img-below-content h3{
+    color: #2a2a2a;
+    font-size: 22px;
+    font-weight: 700;
+}
+.mens-img-below-content span{
+    color: #A1A1A1;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* .mens-star{
+    display: flex;
+    gap: 5px;
+} */
+.mens-star img{
+    width: 50px;
+    height: 50px;
+}
