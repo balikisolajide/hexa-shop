@@ -47,6 +47,12 @@ nav{
     width: 20px;
     height: 15px;
 }
+.menu-bar img{
+    width: 40px;
+    height:40px;
+    display: none;
+
+}
 .dropdown{
     position: relative;
     display: inline-block;
@@ -362,7 +368,6 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     padding: 50px;
     background-color: white;
-    
     margin: auto;
     margin-top: 80px;
     border-bottom: 1px dashed black;
@@ -634,3 +639,111 @@ nav{
     width: 20px;
     height: 20px;
 }
+@media screen and (max-width: 440px){
+    nav{
+        padding: 10px 20px;
+        height: 70px;
+    }
+    .navbar{
+
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-img{
+        width: 100px;
+        height: 50px;
+    }
+    /* .menu-bar{
+        display: block;
+    } */
+    .menu-bar img{
+        display: block;
+    }
+    .hero-section{
+        flex-direction: column;
+    }
+    .hero-right{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hero-left{
+        width: 100%;
+        height: 600px;
+    }
+    .men-latest{
+        padding: 40px 40px;
+        gap: 20px;
+    }
+    .men-latest-header{
+        padding-left: 0px;
+    }
+    .men-latest-content{
+        flex-direction: column;
+        align-items: start;
+    }
+    .box-arrow{
+        display: none;
+    }
+    .mens-img-content{
+        width: 100%;
+    }
+    .products-section{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    /* .text-content p{
+        width: 300px;
+    } */
+     .products-grid{
+        grid-template-columns: repeat(1,1fr);
+        
+     }
+     .product{
+        width: 100%;
+        height: 400px;
+     }
+
+     .product-text{
+        flex-direction: column;
+        align-items: start;
+     }
+     .social-media{
+        flex-direction: column;
+        /* align-items: start; */
+     }
+    .social-media-text{
+        margin-right: 0;
+    }
+
+    .image-gallery{
+    display: block;
+    }
+    .image-gallery img{
+        width: 100%;
+    }
+
+    .newsletter{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .contact-info h2{
+        font-size: 20px;
+    }
+
+    .form-container{
+        /* display: block; */
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    .form-container input{
+        width: 100%;
+    }
+
+    .form-container button{
+        width: 100%;
+    }
+ }
