@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    padding: 10px 190px;
+    height: 100px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 15px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-img{
+    width: 195px;
+    height: 70px;
+}
+.nav-img a img{
+    width: 100%;
+    height: 100%;
+}
+.nav-links{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.nav-links a{
+    color: #212529;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.nav-links a:hover{
+    color: #AAAAAA;
+}
+.nav-links a img{
+    width: 20px;
+    height: 15px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown h3{
+    color: #212529;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown h3 img{
+    width: 12px;
+    height: 12px;
+}
+.dropdown h3:hover{
+    color: #212529;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    padding: 10px 0px;
+    /* display: flex; */
+    flex-direction: column;
+    min-width: 180px;
+    /* gap: 12px; */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 1);
+    z-index: 10;
+}
+.dropdown-content a{
+    color: #212529;
+    font-size: 15px;
+    font-weight: 500;
+    /* padding: 5px; */
+    line-height: 1.8;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.product-hero-section {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-hero-section{
+    background-image: url(/products-page-heading.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 100px;
+    height: 400px;
+}
+.content {
+    position: relative;
+    color: white;
+}
+
+.content h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 16px;
+    font-style: italic;
+}
+.men-latest{
+    padding: 90px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* border-bottom: 1px dashed black;
+    padding-bottom: 15px; */
+}
+.men-latest-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 14px;
+    padding-left: 95px;
+}
+.men-latest-header h2{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.men-latest-header p{
+    color: #212529;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.men-latest-content{
+    display: flex;
+    /* justify-content: center; */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    align-items: center;
+    gap: 30px;
+    /* justify-content: space-between; */
+}
+/* .box-arrow{ */
+    /* border: 1px solid black;
+    padding: 20px; */
+    /* width: 100px;
+    height: 50px; */
+/* } */
+/* .box-arrow img{
+    width: 30px;
+    height: 30px;
+}
+.box-arrow-img{
+    transform: rotate(180deg);
+} */
+.mens-img-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 370px;
+}
+.mens-img-content img{
+    width: 100%;
+    height: 350px;
+}
+.mens-img-below{
+    display: flex;
+    justify-content: space-between;
+}
+.mens-img-below-content{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.mens-img-below-content h3{
+    color: #2a2a2a;
+    font-size: 22px;
+    font-weight: 700;
+}
+.mens-img-below-content span{
+    color: #A1A1A1;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* .mens-star{
+    display: flex;
+    gap: 5px;
+} */
+.mens-star img{
+    width: 50px;
+    height: 50px;
+}
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom .social-icons {
+    margin-top: 10px;
+}
+
+.footer-bottom .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-bottom .social-icons img {
+    width: 20px;
+    height: 20px;
+}
+@media screen and (max-width: 440px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a, 
+    .dropdown h3 {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+
+    .product-hero-section .content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .men-latest-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .mens-img-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mens-img-content {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom .social-icons {
+        margin-top: 15px;
+    }
+}
