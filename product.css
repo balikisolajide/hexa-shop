@@ -135,6 +135,7 @@ nav{
 }
 .men-latest-header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 14px;
@@ -288,6 +289,10 @@ nav{
     height: 20px;
 }
 @media screen and (max-width: 440px) {
+
+    nav{
+        padding: 13px 13px;
+    }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -295,9 +300,7 @@ nav{
     }
 
     .nav-links {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        display: none;
     }
 
     .nav-links a, 
@@ -316,11 +319,26 @@ nav{
         display: flex;
     }
 
-    .product-hero-section .content {
+    .product-hero-section {
         padding: 20px;
         text-align: center;
     }
 
+    .content h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 15px;
+    width: 100%;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.men-latest-header{
+    padding-left: 0;
+}
     .men-latest-content {
         flex-direction: column;
         gap: 20px;
@@ -328,12 +346,12 @@ nav{
     }
 
     .mens-img-content img {
-        width: 100%;
+        /* width: 100%; */
         height: auto;
     }
 
     .mens-img-content {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .footer-container {
